@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Stepper Form</title>
+  </head>
+  <body>
+    <div class="stepper-body">
+      <div class="step step-1">
+        <div class="step-header">
+          <div class="step-icon">1</div>
+          <p class="active">Step 1</p>
+        </div>
+        <div class="step-container">
+          <label>Email</label>
+          <input type="email" name="email" value="" onkeypress="fetchVal(event);"/>
+        </div>
+      </div>
+      <div class="step step-2">
+        <div class="step-header">
+          <div class="step-icon">2</div>
+          <p class="">Step 2</p>
+        </div>
+        <div class="step-container">
+          <label>Password</label>
+          <input type="password" name="password" value="" onkeypress="fetchVal(event);"/>
+        </div>
+      </div>
+      <div class="step step-3">
+        <div class="step-header">
+          <div class="step-icon">3</div>
+          <p>Step 3</p>
+        </div>
+        <div class="step-container">
+          <p>You're all set</p>
+          <input type="button" value="Submit" onclick="submitForm();"/>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
